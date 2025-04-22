@@ -1,2 +1,2 @@
-# WaterReminder
-Water reminder app
+# DrinkWaterReminder
+Drink Water reminder app
