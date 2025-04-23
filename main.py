@@ -13,7 +13,7 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-ICON_PATH = resource_path("water_icon.png")
+ICON_PATH = resource_path("asset/water_icon_with_sizes.ico")
 
 def warm_up_notification():
     """預熱通知系統"""
