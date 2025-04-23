@@ -5,6 +5,7 @@ import threading
 from tkinter import Tk, Label, Entry, Button, StringVar
 from winotify import Notification, audio
 
+
 def resource_path(relative_path):
     """打包後讀取資源用"""
     try:
@@ -13,7 +14,9 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-ICON_PATH = resource_path("datasets/water_icon.png")
+
+ICON_PATH = resource_path("water_icon.png")
+
 
 def warm_up_notification():
     """預熱通知系統"""
@@ -28,6 +31,7 @@ def warm_up_notification():
         toast.show()
     except:
         pass
+
 
 class WaterReminderApp:
     def __init__(self, root):
@@ -89,8 +93,8 @@ class WaterReminderApp:
         self.status.set(f"提醒結束，共提醒 {max_times} 次。")
         self.running = False
 
+
 if __name__ == "__main__":
     root = Tk()
     app = WaterReminderApp(root)
     root.mainloop()
-
